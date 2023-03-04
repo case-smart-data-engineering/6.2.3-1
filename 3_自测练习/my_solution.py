@@ -64,6 +64,5 @@ def get_sentence_vector():
     return summed_all_tokens / len(tokenized_text)
 
 
-# 输出词向量和句向量,768维
 if __name__ == '__main__':
     pass

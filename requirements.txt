@@ -3,4 +3,4 @@ torch==2.2.0
 torchaudio==2.2.0
 torchvision==0.17.0
 protobuf==3.19.0
-transformers
+transformers==3.4.0

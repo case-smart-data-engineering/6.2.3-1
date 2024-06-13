@@ -7,7 +7,7 @@ import torch
 text = "人工智能"
 marked_text = "[CLS] " + text + " [SEP]"  # [CLS] 人工智能 [SEP]
 # 导入BERT-specific tokenizer
-tokenizer = BertTokenizer.from_pretrained('1_算法示例/bert-base-chinese')
+tokenizer = BertTokenizer.from_pretrained('/workspace/6.2.2-1/1_算法示例/bert-base-chinese')
 # ①token初始化
 tokenized_text = tokenizer.tokenize(marked_text)  # ['[CLS]', '人', '工', '智', '能', '[SEP]']6
 # ②获取每个token在词表中对应的索引
@@ -18,7 +18,7 @@ segments_ids = [1] * len(tokenized_text)  # [1, 1, 1, 1, 1, 1]
 tokens_tensor = torch.tensor([indexed_tokens])  # tensor([[ 101,  782, 2339, 3255, 5543,  102]])
 segments_tensors = torch.tensor([segments_ids])  # tensor([[1, 1, 1, 1, 1, 1]])
 # 加载预训练模型bert-base-chinese
-model = BertModel.from_pretrained('1_算法示例/bert-base-chinese')
+model = BertModel.from_pretrained('/workspace/6.2.2-1/1_算法示例/bert-base-chinese')
 # eval()将我们的模型置于评估模式，而不是训练模式
 model.eval()
 # ⑤获取网络的隐藏状态

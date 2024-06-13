@@ -1,5 +1,4 @@
-# 下载模型
-1. 先要运行download_model.py文件，下载pytorch_model.bin模型文件，该文件会被保存在目录bert-base-chinese下，接下来我们就可以使用BERT模型了
+
 
 # 算法示例
 1. 案例给出的是一个句子的输入，BERT可以接受一到两个句子作为输入。
@@ -15,4 +14,5 @@
 # 使用指南
 1. 按 `CTRL + P` 打开命令行面板，输入 "terminal: Create New Terminal" 打开一个命令行终端.
 2. 在命令行里输入 `cd 1_算法示例` 并按 `ENTER` 进入"算法示例"目录。
-3. 在命令行里输入 `python solution.py` 按 `ENTER` 运行示例程序。
+3. 在命令行里输入 `python download_model.py` 按 `ENTER` 运行示例程序,下载pytorch_model.bin模型文件，该文件会被保存在目录bert-base-chinese下。
+4. 在命令行里输入 `python solution.py` 按 `ENTER` 运行示例程序。
